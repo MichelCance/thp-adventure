@@ -1,0 +1,153 @@
+html{
+padding: 0;
+margin:0;
+}
+
+body{
+	font-family: arial;
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+a:hover{
+	text-decoration: underline;
+	color: grey;
+}
+
+/*  Mise en Forme Barre Header  */
+
+nav {
+
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 10px 30px;
+	font-size: 14px;
+}
+
+nav > a {
+	margin-left: 20px;
+}
+
+nav button{
+
+	background-color: #3f7bfc;
+	border: none;
+	color: #fff;
+	padding: 0px 12px;
+	height: 30px;
+	border-radius: 2px;
+	font-size: 14px
+
+}
+
+/* Mise en forme Element central */
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 140px;
+}
+
+main .logo img{
+	height: 92px;
+	width: 272px;
+}
+
+main>.recherche{
+	height: 46px;
+	border: 1px solid #dfe1e5;
+	border-radius: 23px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 600px;
+	margin: 20px 0;
+}
+
+main input{
+	display: flex;
+	flex-grow: 1;
+	border: none;
+	font-size: 18px
+}
+
+main input:focus{
+	outline: none;
+}
+
+main i,
+main .recherche img{
+	padding: 0 22px;
+	height: 24px;
+	width: 24px;
+}
+
+main .covid19{
+	display: flex;
+	align-items: center;
+	margin: 30px;
+	color: #1a0dab;
+	font-size: 14px;
+}
+
+main .covid19:visited{
+	color: #609;
+}
+
+main .covid19 img{
+	height: 45px;
+	width: 45px;
+	margin-right: 5px;
+}
+
+/* Mise en page Footer */
+
+footer{
+	background-color: #f2f2f2;
+	color: #9aa0a6;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	font-size: 14px;
+}
+
+footer > div{
+	border-top: 1px solid #e4e4e4;
+	padding: 8px 16px;
+}
+
+footer .ligne1{
+	color: #222;
+	opacity: .54;
+}
+
+footer .ligne2{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+color: #5f6368;
+}
+
+footer .ligne2 a:not(:first-child){
+	padding-left: 27px;
+}
+
+/* Mise en page Footer responsive */
+
+@media screen and (max-width: 1200px){
+	footer .ligne2{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	footer .ligne2 div:not(:first-child){
+		margin-top: 5px;
+	}
+}
+
